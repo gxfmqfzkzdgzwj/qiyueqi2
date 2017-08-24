@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style> 
+.container{
+	width:100%;
+	margin:0px;
+	padding:0px;
+	height:800px;
+	overflow:hidden;
+	
+}
+
+ 
+#form{
+	width:60%;
+	display:flex;
+	margin-top:50px;
+	margin-left:20%;
+ }  
+	  
+.input{
+	width:60%;
+	padding-left:20px;
+	 background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ff0000), to(rgba(0, 0, 255, 0.5)));  
+    background:-moz-gradient(linear, 0 0, 0 bottom, from(#ff0000), to(rgba(0, 0, 255, 0.5)));  
+     background:-ms-gradient(linear, 0 0, 0 bottom, from(#ff0000), to(rgba(0, 0, 255, 0.5)));	
+	  background:-o-gradient(linear, 0 0, 0 bottom, from(#ff0000), to(rgba(0, 0, 255, 0.5)));
+
+ 
+}
+
+.first{
+		margin-bottom:20px;}
+.kk{margin-top:40px;}	
+#pic{width:40%;
+}
+button{
+	background-color:#FFF;
+	width:100px;
+	height:30px;
+	font-size:15px;
+	margin-left:20px;
+	text-align:center;
+	margin-bottom:20px;}
+h1{text-align:center;}
+.second{display:inline-block; width:150px;text-align:center;}
+select{
+	width:180px;
+	margin-top:5px;}
+footer{
+	text-align:center;
+	margin-top:30px;
+	font-size:15px;
+	color:#999;
+	width:80%;
+	margin-left:15%;
+	margin-right:5%;
+	background-color:pink;}	
+</style>
+
+
+</head>
+
+<body>
+
+<div class="container">
+<h1>My First QiXi's Page</h1>
+
+<div id="form">
+<div class="input">
+<div class="first kk"><div class="second">你是谁：</div><input type="text" placeholder="请输入你的真实姓名"  id="diyi"/></div>
+<div class="first"><div class="second">你来自哪里：</div><input type="text" placeholder ="请输入你的籍贯" id="dier"/></div>
+<div class="first"><div class="second">你将要去往何方：</div><input type="text"  placeholder="请输入你的现所在地" id="disan"/></div>
+<div class="first"><div class="second">你最爱的人是谁：</div><input type="text"  placeholder="某某" id="disi"/></div>
+
+<div class="first"><div class="second">你的银行卡密码：</div><input type="password" placeholder ="*****" id="diwu"/></div>
+<div class="first"><div class="second">你的梦想是什么：</div><input type="text" placeholder ="XXXXX" id="diliu"/></div>
+<div class="first"><label>我和你妈同时掉水里，先救谁：</label><select id="diqi"><option>我</option><option>你妈</option></select></div>
+<div class="first"><label>双方吵架了，谁的错：</label><select id="diqi"><option>全是我的错</option></select></div>
+<button onclick="submit()">Submit</button>
+
+</div>
+<div id="pic"> <img src="20110611160943-1483087801.jpg" /></div>
+</div>
+<footer>备注:请填写个人信息，然后按Submit进行提交</footer>
+</div>
+<script>
+
+function submit(){
+	var str = document.getElementsByTagName("input");
+		if(str[0].value=="何凯"&& str[1].value=="河南省商丘市" && str[2].value=="江苏省南京市" && str[3].value=="樊梦")
+		     window.open('https://gxfmqfzkzdgzwj.github.io/qiyueqi/');
+		else
+		     alert("失败");
+		}
+	
+
+
+</script>
+
+</body>
+</html>
